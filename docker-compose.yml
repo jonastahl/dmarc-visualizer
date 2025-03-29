@@ -38,4 +38,4 @@ services:
         condition: service_healthy
 
 networks:
-  monitoring_network
+  monitoring_network:
