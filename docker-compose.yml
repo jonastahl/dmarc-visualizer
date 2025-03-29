@@ -6,8 +6,6 @@ services:
       - ./files:/input:ro
       - ./output_files:/output
     command: parsedmarc -c /parsedmarc.ini /input/* --debug
-    depends_on:
-      - elasticsearch
     restart: on-failure
     networks:
       - monitoring_network
